@@ -1,5 +1,4 @@
-# Python Tic Tac Toe game
-# ********************************************************
+# Python MOMY DADY GAME BY USING TKinter
 
 from tkinter import *
 import random
