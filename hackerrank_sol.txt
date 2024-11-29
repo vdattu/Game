@@ -1,0 +1,142 @@
+#Solutions for FDP mits:--
+
+1.Python If-else:-
+n = int(input())
+if n%2!=0:
+    print('Weird')
+if n%2==0 and n>=2 and n<=5:
+    print('Not Weird')
+if n%2==0 and n>=6 and n<=20:
+    print('Weird')
+if n%2==0 and n>20:
+    print('Not Weird'
+
+
+2.Lists:-
+if __name__ == '__main__':
+    N = int(input())
+    lst=[]
+    for i in range(N):
+        command=input().split()
+        if command[0]=='insert':
+            lst.insert(int(command[1]),int(command[2]))
+        elif command[0]=='print':
+            print(lst)
+        elif command[0]=='remove':
+            lst.remove(int(command[1]))
+        elif command[0]=='append':
+            lst.append(int(command[1]))
+        elif command[0]=='sort':
+            lst.sort()
+        elif command[0]=='pop':
+            lst.pop()
+        elif command[0]=='reverse':
+            lst.reverse()
+
+
+3.write a function:-
+def is_leap(year):
+    leap = False
+    if year%4==0 and year%100!=0 or year%400==0:
+        leap=True
+return leap
+
+
+4.SwapCase:-
+def swap_case(s):
+    return s.swapcase()
+
+
+
+5.Mutations:-
+def mutate_string(string, position, character):
+    new_string=string[:position]+character+string[position+1:]
+    return new_string
+
+
+6.String Split and join:-
+def split_and_join(line):
+    new_lst=line.split()
+
+
+7.Find the runner up score:--
+Approach -1 —> using loops
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    max1=max(arr)
+    while max1==max(arr):
+        arr.remove(max(arr))
+    arr.sort()
+    print(arr[-1]
+Approach 2 —> using set data type
+if __name__ == '__main__':n = int(input())
+    arr=map(int, input().split())
+print(sorted(list(set(arr)))[-2])
+
+
+
+8.Find a string:-
+def count_substring(string, sub_string):
+    count = 0
+    for i in range(len(string)):
+        count+= string.count(sub_string,i,len(sub_string)+i)
+    return count
+
+
+
+9.list comprahensions:-
+Apporach1
+s=[]
+for i in range(x+1):
+    for j in range(y+1):
+        for k in range(z+1):
+            if i+j+k!=n:
+                s.append([i,j,k])
+print(s)
+Apporach2
+print([[i,j,k] for i in range(x+1)for j in range(y+1)for k in range(z+1) if i+j+k!=n])
+
+
+10.Minion game Medium:--
+    vowels ='AEIOU'
+    Stuart = 0
+    Kevin = 0
+    for i in range(len(string)):
+        if string[i] in vowels:
+            Kevin+=(len(string)-i)
+        else:
+            Stuart+=(len(string)-i)
+    if Stuart > Kevin:
+        print("Stuart"+" "+ "%d" % Stuart)
+    elif Kevin>Stuart:
+        print("Kevin"+" "+'%d' % Kevin)
+    else:
+        print("Draw")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
