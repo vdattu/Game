@@ -56,7 +56,8 @@ def mutate_string(string, position, character):
 
 6.String Split and join:-
 def split_and_join(line):
-    new_lst=line.split()
+    new_lt = line.split()
+    return '-'.join(new_lt)
 
 
 7.Find the runner up score:--
